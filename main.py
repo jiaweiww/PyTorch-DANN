@@ -22,7 +22,7 @@ def main(args):
 
 
 def update_args(args):
-    args.adapt_epochs = 200
+    args.adapt_epochs = args.src_epochs
     args.channels = 3
     args.num_classes = 10
     args.cm = True
