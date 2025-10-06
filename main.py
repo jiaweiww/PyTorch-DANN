@@ -77,7 +77,7 @@ if __name__ == '__main__':
     parser.add_argument('--p_thresh', type=float, default=0.9)
     parser.add_argument('--method', type=str, default='src', choices=['src', 'dann'])
 
-    parser.add_argument('--src_epochs', type=int, default=50)
+    parser.add_argument('--src_epochs', type=int, default=200)
     parser.add_argument('--batch_size', type=int, default=128)
     parser.add_argument('--num_workers', type=int, default=4)
     parser.add_argument('--lr', type=float, default=1e-4)
