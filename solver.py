@@ -81,22 +81,22 @@ class Solver(object):
 
     def test(self):
         s_train_acc, cm = self.test_dataset('s_train')
-        print("Source Tr Acc: %.2f" % (s_train_acc))
+        print("Source Train Acc: %.2f" % (s_train_acc))
         if self.args.cm:
             print(cm)
 
         s_test_acc, cm = self.test_dataset('s_test')
-        print("Source Te Acc: %.2f" % (s_test_acc))
+        print("Source Test Acc: %.2f" % (s_test_acc))
         if self.args.cm:
             print(cm)
 
         t_train_acc, cm = self.test_dataset('t_train')
-        print("Target Tr Acc: %.2f" % (t_train_acc))
+        print("Target Train Acc: %.2f" % (t_train_acc))
         if self.args.cm:
             print(cm)
 
         t_test_acc, cm = self.test_dataset('t_test')
-        print("Target Te Acc: %.2f" % (t_test_acc))
+        print("Target Test Acc: %.2f" % (t_test_acc))
         if self.args.cm:
             print(cm)
 
