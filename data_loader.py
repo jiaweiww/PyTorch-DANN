@@ -52,8 +52,10 @@ def get_loader(args):
                                         transforms.ToTensor(),
                                         transforms.Normalize([0.5], [0.5])])
 
-        t_train = datasets.ImageFolder(root=os.path.join(args.data_path, 'mnistm', 'trainset'), transform=mnistm_tr)
-        t_test = datasets.ImageFolder(root=os.path.join(args.data_path, 'mnistm', 'testset'), transform=mnistm_tr)
+        # t_train = datasets.ImageFolder(root=os.path.join(args.data_path, 'mnistm', 'trainset'), transform=mnistm_tr)
+        # t_test = datasets.ImageFolder(root=os.path.join(args.data_path, 'mnistm', 'testset'), transform=mnistm_tr)
+        t_train = datasets.ImageFolder(root=r'/kaggle/input/mnist-m/train', transform=mnistm_tr)
+        t_test = datasets.ImageFolder(root=r'/kaggle/input/mnist-m/test', transform=mnistm_tr)
 
     elif args.dset == 'sd2sv':
         tr = transforms.Compose([transforms.Resize([32, 32]),
